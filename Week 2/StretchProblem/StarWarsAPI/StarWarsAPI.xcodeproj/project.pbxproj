@@ -8,20 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		40CFC5211D09BE320034F068 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CFC5201D09BE320034F068 /* AppDelegate.swift */; };
-		40CFC5231D09BE320034F068 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CFC5221D09BE320034F068 /* ViewController.swift */; };
 		40CFC5261D09BE320034F068 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40CFC5241D09BE320034F068 /* Main.storyboard */; };
 		40CFC5281D09BE320034F068 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40CFC5271D09BE320034F068 /* Assets.xcassets */; };
 		40CFC52B1D09BE320034F068 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40CFC5291D09BE320034F068 /* LaunchScreen.storyboard */; };
+		40CFC5331D09BEC70034F068 /* PlanetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CFC5321D09BEC70034F068 /* PlanetViewController.swift */; };
+		40CFC5351D09BECF0034F068 /* Planet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CFC5341D09BECF0034F068 /* Planet.swift */; };
+		40CFC5371D09BED50034F068 /* PlanetController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CFC5361D09BED50034F068 /* PlanetController.swift */; };
+		40CFC5391D09BEE40034F068 /* NetworkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CFC5381D09BEE40034F068 /* NetworkController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		40CFC51D1D09BE320034F068 /* StarWarsAPI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StarWarsAPI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		40CFC5201D09BE320034F068 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		40CFC5221D09BE320034F068 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		40CFC5251D09BE320034F068 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		40CFC5271D09BE320034F068 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		40CFC52A1D09BE320034F068 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		40CFC52C1D09BE320034F068 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		40CFC5321D09BEC70034F068 /* PlanetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlanetViewController.swift; sourceTree = "<group>"; };
+		40CFC5341D09BECF0034F068 /* Planet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Planet.swift; sourceTree = "<group>"; };
+		40CFC5361D09BED50034F068 /* PlanetController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlanetController.swift; sourceTree = "<group>"; };
+		40CFC5381D09BEE40034F068 /* NetworkController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,10 +60,13 @@
 		40CFC51F1D09BE320034F068 /* StarWarsAPI */ = {
 			isa = PBXGroup;
 			children = (
-				40CFC5201D09BE320034F068 /* AppDelegate.swift */,
-				40CFC5221D09BE320034F068 /* ViewController.swift */,
 				40CFC5241D09BE320034F068 /* Main.storyboard */,
+				40CFC5341D09BECF0034F068 /* Planet.swift */,
+				40CFC5361D09BED50034F068 /* PlanetController.swift */,
+				40CFC5321D09BEC70034F068 /* PlanetViewController.swift */,
+				40CFC5381D09BEE40034F068 /* NetworkController.swift */,
 				40CFC5271D09BE320034F068 /* Assets.xcassets */,
+				40CFC5201D09BE320034F068 /* AppDelegate.swift */,
 				40CFC5291D09BE320034F068 /* LaunchScreen.storyboard */,
 				40CFC52C1D09BE320034F068 /* Info.plist */,
 			);
@@ -135,7 +144,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				40CFC5231D09BE320034F068 /* ViewController.swift in Sources */,
+				40CFC5391D09BEE40034F068 /* NetworkController.swift in Sources */,
+				40CFC5351D09BECF0034F068 /* Planet.swift in Sources */,
+				40CFC5371D09BED50034F068 /* PlanetController.swift in Sources */,
+				40CFC5331D09BEC70034F068 /* PlanetViewController.swift in Sources */,
 				40CFC5211D09BE320034F068 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
