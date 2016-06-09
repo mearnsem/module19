@@ -5,10 +5,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Planet View Controller-->
         <scene sceneID="v5T-Br-kWr">
             <objects>
-                <viewController id="cEz-hN-8yI" sceneMemberID="viewController">
+                <viewController id="cEz-hN-8yI" customClass="PlanetViewController" customModule="StarWarsAPI" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Wxa-9f-3a5"/>
                         <viewControllerLayoutGuide type="bottom" id="SvA-5u-5We"/>
@@ -46,6 +46,11 @@
                             <constraint firstItem="Uip-Wj-ZdN" firstAttribute="leading" secondItem="tPE-Ui-2fj" secondAttribute="leading" id="e5H-gb-C8b"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="diameterLabel" destination="tPE-Ui-2fj" id="rKj-jb-3Ox"/>
+                        <outlet property="nameLabel" destination="kO2-SF-MUk" id="b8k-ha-vVC"/>
+                        <outlet property="terrainLabel" destination="Uip-Wj-ZdN" id="eiI-gV-VPv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Alp-cs-8pf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

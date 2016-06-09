@@ -16,11 +16,14 @@ class PlanetController {
         guard let url = baseUrl else {return}
         
         NetworkController.performRequestForURL(url, httpMethod: .Get) { (data, error) in
-            guard let data = data else {
+            guard let data = data, jsonDictionary = (try? NSJSONSerialization.JSONObjectWithData(data, options: .AllowFragments)) as? [String: AnyObject] else {
                 completion(planet: nil)
                 return
             }
-            print(data)
+            dispatch_async(dispatch_get_main_queue(), { 
+                let planet = Planet(dictionary: jsonDictionary)
+                completion(planet: planet)
+            })
         }
     }
     

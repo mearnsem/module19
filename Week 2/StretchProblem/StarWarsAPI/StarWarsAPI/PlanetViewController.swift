@@ -10,12 +10,17 @@ import UIKit
 
 class PlanetViewController: UIViewController {
 
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var diameterLabel: UILabel!
+    @IBOutlet weak var terrainLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         PlanetController.getPlanet { (planet) in
-            
-            
+            self.nameLabel.text = planet?.name
+            self.diameterLabel.text = planet?.diameter
+            self.terrainLabel.text = planet?.terrain
         }
     }
 
