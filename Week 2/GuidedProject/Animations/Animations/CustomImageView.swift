@@ -8,7 +8,19 @@
 
 import UIKit
 
+@IBDesignable
 class CustomImageView: UIImageView {
+    
+    @IBInspectable var cornerRadius: CGFloat = 0 {
+        didSet {
+            setupView()
+        }
+    }
+    
+    override func prepareForInterfaceBuilder() {
+        super.prepareForInterfaceBuilder()
+        setupView()
+    }
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -16,6 +28,7 @@ class CustomImageView: UIImageView {
     }
     
     func setupView() {
-        
+        self.layer.cornerRadius = cornerRadius
+        self.layer.masksToBounds = true
     }
 }

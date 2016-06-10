@@ -16,9 +16,9 @@
  
  https://developer.apple.com/videos/play/wwdc2014/221/
  
- /*****************************************/
+ /***************************************************/
  /* Things to be familiar with in the documentation */
- /*****************************************/
+ /***************************************************/
  
  "animateWithDuration"
  "CAAnimation"

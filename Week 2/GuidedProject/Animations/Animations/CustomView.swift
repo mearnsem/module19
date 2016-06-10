@@ -21,5 +21,30 @@ class CustomView: UIView {
     func setupView() {
         self.originalFrame = self.frame
     }
+    
+    func moveInFromLeft(completion: (readyForImage: Bool) -> Void) {
+        UIView.animateWithDuration(0.2, animations: { 
+            self.frame = CGRectMake(self.originalFrame.origin.x + 400, self.originalFrame.origin.y, self.originalFrame.width, self.originalFrame.height)
+            }) { (_) in
+                self.frame = CGRectMake(self.originalFrame.origin.x - 400, self.originalFrame.origin.y, self.originalFrame.width, self.originalFrame.height)
+                completion(readyForImage: true)
+                UIView.animateWithDuration(0.5, delay: 0.0, usingSpringWithDamping: 0.6, initialSpringVelocity: 0.8, options: [], animations: { 
+                    self.frame = self.originalFrame
+                    }, completion: nil)
+        }
+    }
+    
+    func moveInFromRight(completion: (readyForImage: Bool) -> Void) {
+        
+        UIView.animateWithDuration(0.2, animations: { 
+            self.frame = CGRectMake(self.originalFrame.origin.x - 400, self.originalFrame.origin.y, self.originalFrame.width, self.originalFrame.height)
+            }) { (_) in
+                self.frame = CGRectMake(self.originalFrame.origin.x + 400, self.originalFrame.origin.y, self.originalFrame.width, self.originalFrame.height)
+                completion(readyForImage: true)
+                UIView.animateWithDuration(0.5, delay: 0.0, usingSpringWithDamping: 0.6, initialSpringVelocity: 0.8, options: [], animations: { 
+                    self.frame = self.originalFrame
+                    }, completion: nil)
+        }
+    }
 }
 

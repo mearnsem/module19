@@ -20,7 +20,8 @@ class PlayerController {
                               UIImage(named: "Captain")!,
                               UIImage(named: "Reese")!,
                               UIImage(named: "Tim")!,
-                              UIImage(named: "Taylor")!]
+                              UIImage(named: "Taylor")!,
+                              UIImage(named: "Yoda")!]
     
     func nextPlayer() -> UIImage? {
         if currentIndex != players.endIndex - 1 {
